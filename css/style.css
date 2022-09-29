@@ -87,4 +87,7 @@ label{
     display: inline-block;
     width: 80px;
   }
-  
+  .titulo{
+    
+    padding-bottom: 40px;
+  }
