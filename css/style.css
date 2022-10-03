@@ -7,8 +7,10 @@
     min-height:100%;
 } */
 body{
-    background-color: burlywood;
+    /* background-color: #3a3548; */
+    background: linear-gradient(to top,rgb(244, 183, 183),rgba(44, 41, 40, 0.836));
 }
+
 nav ul{
     display:flex;
     justify-content: space-evenly;
@@ -22,24 +24,19 @@ a{
     color:rgb(253, 250, 250);
     font-size: larger;
 }
-header{
+/* header{
 
     background-color: rgb(139, 9, 9);
-    /*padding=relleno*/
+  
     padding:80px 40px 100px 60px;
-    margin-top: 0;
-}
-footer{
-    margin-bottom: 0;
-    background-color:rgb(139, 9, 9);
-    
-}
+   margin-top: 0;
+} */ 
 h1,h4{
     font-family: 'Roboto', sans-serif;
     /* padding-left:700px; */
     color: aliceblue;
     text-align: center;
-
+    
     /* padding-left:300px; */
     /* margin:30px; */
 }
@@ -50,12 +47,29 @@ h2{
 p{
     font-family: 'Roboto', sans-serif;
     color: aliceblue;
+    margin: 0px 50px;
+}
+
+footer{
+    /* background-color: aqua; */
+    background-color:rgb(139, 9, 9);
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 20px;
+    text-align: center;
+}
+  footer img{
+    width: 50px;
+    margin: 0px 10px;
+}
+/* footer{
+    margin-bottom: 0;
+    background-color:rgb(139, 9, 9);
+    
 }
 img{
     margin-left: 50px;
-    /* border:10px solid white; */
-    /* border:2px solid red; */
-}
+} */
 figcaption{
     color: aliceblue;
     text-align: center;
@@ -79,6 +93,14 @@ figcaption{
     display:block;
     margin:auto;
 }
+.galeria{
+    display: flex;
+    flex-wrap: wrap;
+}
+.imgs img{
+    width:45vw;
+    margin-bottom: 10px;
+}
 .video{
     display:block;
     margin:auto;
@@ -87,4 +109,92 @@ label{
     display: inline-block;
     width: 80px;
   }
-  
+  .titulo{
+    
+    padding-bottom: 40px;
+  }
+  @keyframes animationBanner {
+    0%{ content: url(../img/barner.jpg); }   
+    50%{  content: url(../img/banner2.jpg); }
+    100%{  content: url(../img/familiaoki.jpg);}
+ }
+ header img{    
+    width: 80%;
+    height:80vh;
+    border-radius: 10px;
+    /* agregando la animacion */
+    animation-name: animationBanner;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 5s;
+    animation-delay: 0s;
+}
+/* header .correo{
+    width: 80%;
+    height:80vh;
+    border-radius: 10px;
+} */
+.centerElement{
+    text-align: center;
+}
+.header{
+    margin-top: 150px;
+}
+
+
+.galeria-grid{
+    grid-area: galeria;
+}
+/*empiezo a acomodar área*/
+
+.envoltura{
+    background-color: goldenrod;
+   
+    margin-bottom: 1.5em;
+    display: grid;
+    gap:20px;
+    grid-template-areas: 
+    "galeria";
+}
+
+ .padre{
+    /*background-color: #3a3548; */
+    /* background: linear-gradient(to top,rgb(244, 183, 183),rgba(44, 41, 40, 0.836)); */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap:15px;
+    justify-items:center;
+}
+.imagenes{
+    width: 300px;
+    height: 250px;
+    border: 8px solid rgb(88, 14, 13);
+    margin-top: 15px;
+}
+
+#exampleFormControlTextarea1{
+    width: 70vw;
+    border-radius: 10px;
+    align-self: center;
+}
+
+
+.form-group{
+    display:flex;
+    flex-direction: column;
+}
+
+.form-group label{
+    align-self: center;
+}
+
+@media (max-width: 500px){
+    .galeria{
+        display: flex;
+        flex-direction: column;
+    }
+    .imgs img{
+        max-width:80vw;
+    }
+}
