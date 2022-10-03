@@ -1,81 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
-    <title>Contacto</title>
-</head>
-<body>
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3" style="background-color:rgb(181 4 4);">
-        <div class="container">
-            <!-- <img src="./img/logooki1.png" alt="logo" class="logo"> -->
-          <a class="navbar-brand" href="../index.html"><img src="../img/logooki1.png" alt="logo" class="logo"></a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-  
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <div class="mx-auto"></div>
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link text-white" href="./inicio.html">INICIO</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="nosotros.html">NOSOSTROS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="historia.html">HISTORIA</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="galeria.html">GALERIA</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="contacto.html">CONTACTO</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    <main>
-        <h1 class="titulo">Formulario de Contacto</h1>
-  
-        <form class="form">
-            <label for="">Nombre</label>
-            <input  type="text">
-            <br><br>
-            <label for="">Password</label>
-            <input type="password">
-            <br><br>
-            <label for="">Correo Electronico</label>
-            <input type="email">
-            <br><br>
-            <input type="submit">
-            <input type="reset">
-            <br><br>
-        </form>
-    </main>
 
-  
-    <footer>
-        <a href="https://www.facebook.com/profile.php?id=100063355231549"target="_blank">
-            <img src="https://img.icons8.com/color/48/000000/facebook-new.png" alt="logo de facebook"/>
-        </a>
-            <img src="https://img.icons8.com/fluency/48/000000/instagram-new.png"alt="logo de instagram"/>
-            <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png"alt="logo whatsapp"/>
-            <img src="https://img.icons8.com/fluency/48/000000/youtube.png"alt="logo de youtube"/> 
-    </footer>
-      <!-- scripts de BTS -->
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Contacto</title>
+</head>
+
+<body>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3" style="background-color:rgb(181 4 4);">
+    <div class="container">
+      <!-- <img src="./img/logooki1.png" alt="logo" class="logo"> -->
+      <a class="navbar-brand" href="../index.html"><img src="../img/logooki1.png" alt="logo" class="logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="mx-auto"></div>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="../index.html">INICIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="nosotros.html">NOSOSTROS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="historia.html">HISTORIA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="galeria.html">GALERIA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="contacto.html">CONTACTO</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="centerElement header">
+    <img class="correo" src="" alt="baner de karatedo">
+  </header>
+  <main class="main centerElement mainReservas">
+    <h1 class="miTitulo tituloSecundario">ESCRIBIME UN CORREO</h1>
+    <section class="centrarElemento">
+      <form action="">
+        <label class="textLabel" for="nombre">Nombre</label>
+        <br>
+        <input class="inputText" type="text" id="nombre" placeholder="Ingrese su Nombre">
+        <br>
+        <br>
+        <label class="textLabel" for="email"></label>
+        <br>
+        <input class="inputText" type="email" id="email" placeholder="Ingrese su email">
+        <br><br>
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Mensaje</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" cols="30"></textarea>
+        </div>
+        <br><br>
+        <div class="buttons">
+          <input type="submit" value="Enviar">
+          <input type="reset" value="Cancelar">
+        </div>
+      </form>
+    </section>
+    <section class="centrarElemento">
+      <div class="miMapa">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3794.6130269334167!2d-70.24761198583563!3d-17.996732087716182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915acf352ff74b41%3A0xacd7dbea502ac9d6!2sD&#39;%20Imagen%20-%20Salon%20Spa%20%26%20Barber!5e0!3m2!1ses-419!2spe!4v1653779555796!5m2!1ses-419!2spe"
+          width="600" height="450" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <a href="https://www.facebook.com/profile.php?id=100063355231549" target="_blank">
+      <img src="https://img.icons8.com/color/48/000000/facebook-new.png" alt="logo de facebook" />
+    </a>
+    <img src="https://img.icons8.com/fluency/48/000000/instagram-new.png" alt="logo de instagram" />
+    <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="logo whatsapp" />
+    <img src="https://img.icons8.com/fluency/48/000000/youtube.png" alt="logo de youtube" />
+  </footer>
+  <!-- scripts de BTS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>

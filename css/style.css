@@ -10,6 +10,7 @@ body{
     /* background-color: #3a3548; */
     background: linear-gradient(to top,rgb(244, 183, 183),rgba(44, 41, 40, 0.836));
 }
+
 nav ul{
     display:flex;
     justify-content: space-evenly;
@@ -46,6 +47,7 @@ h2{
 p{
     font-family: 'Roboto', sans-serif;
     color: aliceblue;
+    margin: 0px 50px;
 }
 
 footer{
@@ -91,6 +93,14 @@ figcaption{
     display:block;
     margin:auto;
 }
+.galeria{
+    display: flex;
+    flex-wrap: wrap;
+}
+.imgs img{
+    width:45vw;
+    margin-bottom: 10px;
+}
 .video{
     display:block;
     margin:auto;
@@ -119,6 +129,11 @@ label{
     animation-duration: 5s;
     animation-delay: 0s;
 }
+/* header .correo{
+    width: 80%;
+    height:80vh;
+    border-radius: 10px;
+} */
 .centerElement{
     text-align: center;
 }
@@ -158,3 +173,28 @@ label{
     margin-top: 15px;
 }
 
+#exampleFormControlTextarea1{
+    width: 70vw;
+    border-radius: 10px;
+    align-self: center;
+}
+
+
+.form-group{
+    display:flex;
+    flex-direction: column;
+}
+
+.form-group label{
+    align-self: center;
+}
+
+@media (max-width: 500px){
+    .galeria{
+        display: flex;
+        flex-direction: column;
+    }
+    .imgs img{
+        max-width:80vw;
+    }
+}
