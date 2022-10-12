@@ -29,20 +29,16 @@ a {
   font-size: larger;
 }
 
-h1, h4 {
+.roboto_color, p, h2, h1, h4 {
   font-family: "Roboto", sans-serif;
   color: aliceblue;
+}
+
+h1, h4 {
   text-align: center;
 }
 
-h2 {
-  font-family: "Roboto", sans-serif;
-  color: aliceblue;
-}
-
 p {
-  font-family: "Roboto", sans-serif;
-  color: aliceblue;
   margin: 0px 50px;
 }
 
@@ -59,7 +55,7 @@ footer img {
 }
 
 figcaption {
-  color: aliceblue;
+  color: color_letra;
   text-align: center;
 }
 
@@ -80,7 +76,7 @@ label {
   }
 }
 header img {
-  width: 80%;
+  @i width: 80%;
   height: 80vh;
   border-radius: 10px;
   /* agregando la animacion */
@@ -104,11 +100,9 @@ header img {
 .portada_oki {
   width: 950px;
   height: 400px;
-  display: block;
-  margin: auto;
 }
 
-.katas, .sa, .imgs {
+.blockauto, .video, .imgs, .katas, .sa, .portada_oki {
   display: block;
   margin: auto;
 }
@@ -121,11 +115,6 @@ header img {
 .galeria {
   display: flex;
   flex-wrap: wrap;
-}
-
-.video {
-  display: block;
-  margin: auto;
 }
 
 .centerElement {
@@ -142,18 +131,18 @@ header img {
 
 /*empiezo a acomodar área*/
 .envoltura {
-  background-color: goldenrod;
-  margin-bottom: 1.5em;
   display: grid;
   gap: 20px;
+  background-color: goldenrod;
+  margin-bottom: 1.5em;
   grid-template-areas: "galeria";
 }
 
 .padre {
   display: grid;
+  gap: 15px;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
-  gap: 15px;
   justify-items: center;
 }
 
