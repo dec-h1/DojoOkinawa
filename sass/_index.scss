@@ -85,14 +85,15 @@ label{
     @include width_height(70px,60px);
     margin-left: -50px;
 }
-.portada_oki{    
-    @include width_height(950px,400px);
-    @extend .blockauto;
-}
 .blockauto{
     display:block;
     margin:auto;
 }
+.portada_oki{    
+    @include width_height(950px,400px);
+    @extend .blockauto;
+}
+
 .katas, .sa {
     @extend .blockauto;
 }

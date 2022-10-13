@@ -76,7 +76,7 @@ label {
   }
 }
 header img {
-  @i width: 80%;
+  width: 80%;
   height: 80vh;
   border-radius: 10px;
   /* agregando la animacion */
