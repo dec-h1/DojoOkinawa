@@ -23,6 +23,14 @@ li {
   list-style-type: none;
 }
 
+figure {
+  margin-top: 80px;
+}
+
+.diyfeLiveArea {
+  margin-top: 150px;
+}
+
 a {
   text-decoration: none;
   color: rgb(253, 250, 250);
@@ -97,14 +105,14 @@ header img {
   margin-left: -50px;
 }
 
-.portada_oki {
-  width: 950px;
-  height: 400px;
-}
-
 .blockauto, .video, .imgs, .katas, .sa, .portada_oki {
   display: block;
   margin: auto;
+}
+
+.portada_oki {
+  width: 950px;
+  height: 400px;
 }
 
 .imgs img {
